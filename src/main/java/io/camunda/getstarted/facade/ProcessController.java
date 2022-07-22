@@ -1,14 +1,11 @@
-package io.camunda.getstarted.controller;
+package io.camunda.getstarted.facade;
 
-import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.fluent.Request;
 import org.apache.http.client.fluent.Response;
 import org.apache.http.entity.ContentType;
 import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,14 +16,14 @@ import java.util.Iterator;
 import java.util.logging.Logger;
 
 @Controller
-public class WorkflowController {
+public class ProcessController {
 
 	@Value("${camunda.api}")
 	String camundaApi;
 
 	private final Logger LOGGER = Logger.getLogger(Class.class.getName());
 
-	public WorkflowController() {}
+	public ProcessController() {}
 
 	/**
 	 * Start a workflow sync with REST

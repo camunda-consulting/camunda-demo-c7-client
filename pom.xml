@@ -26,6 +26,12 @@
 			<artifactId>spring-boot-starter</artifactId>
 		</dependency>
 
+		<!--  Camunda External Task Client -->
+		<dependency>
+			<groupId>org.camunda.bpm.springboot</groupId>
+			<artifactId>camunda-bpm-spring-boot-starter-external-task-client</artifactId>
+			<version>7.17.0</version>
+		</dependency>
 
 		<!-- Spring Dependencies -->
 		<dependency>
@@ -38,6 +44,12 @@
 			<groupId>org.apache.httpcomponents</groupId>
 			<artifactId>fluent-hc</artifactId>
 		</dependency>
+
+		<!-- Mail API -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-mail</artifactId>
+    </dependency>
 
 		<dependency>
 			<groupId>org.json</groupId>
